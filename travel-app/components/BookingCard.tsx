@@ -355,7 +355,7 @@ const BookingCard: React.FC = () => {
               <h2 className="text-2xl font-bold mb-4">About This Trip</h2>
               <p className="text-gray-600 mb-6">{destination.longDescription}</p>
               
-              <h3 className="font-semibold mb-3">What's Included:</h3>
+              <h3 className="font-semibold mb-3">What&apos;s Included:</h3>
               <ul className="grid grid-cols-2 gap-2">
                 {destination.included.map((item, index) => (
                   <li key={index} className="flex items-center text-gray-600">
@@ -537,7 +537,7 @@ const BookingCard: React.FC = () => {
                 </Button>
 
                 <p className="text-sm text-gray-600 text-center">
-                  You won't be charged yet
+                  You won&apos;t be charged yet
                 </p>
               </div>
             </div>

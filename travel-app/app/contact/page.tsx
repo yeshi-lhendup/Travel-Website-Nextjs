@@ -92,7 +92,7 @@ export default function ContactPage() {
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl md:text-2xl max-w-2xl mx-auto">
-            We're here to help plan your perfect journey
+            We&apos;re here to help plan your perfect journey
           </p>
         </div>
       </motion.section>
