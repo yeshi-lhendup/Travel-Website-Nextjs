@@ -56,7 +56,7 @@ export default function SignupPage() {
       
       toast({
         title: "Account created successfully!",
-        description: "Welcome to TravelNestle. You can now log in.",
+        description: "Welcome to Drukjourney. You can now log in.",
       });
       
       form.reset();
@@ -83,7 +83,7 @@ export default function SignupPage() {
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold">Create an Account</h1>
             <p className="text-gray-600 mt-2">
-              Join TravelNestle and start your journey
+              Join Drukjourney and start your journey
             </p>
           </div>
 

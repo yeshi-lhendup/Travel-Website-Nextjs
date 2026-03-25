@@ -20,25 +20,25 @@ import { useToast } from "@/hooks/use-toast";
 const destinations = [
     {
       id: 1,
-      name: "Santorini, Greece",
-      image: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e",
-      description: "Experience the stunning sunsets and white-washed architecture of Santorini.",
-      longDescription: "Discover the magic of Santorini, where dramatic cliffs meet the crystal-clear waters of the Aegean Sea. This iconic Greek island is famous for its stunning sunsets, white-washed buildings with blue domes, and rich history. Explore charming villages, visit local wineries, and relax on unique volcanic beaches.",
-      price: 1299,
+      name: "Paro Taktsang, Bhutan",
+      image: "/paro-taktsang.png",
+      description: "Experience the breathtaking Tiger's Nest Monastery, perched dramatically on a cliffside.",
+      longDescription: "Discover the magic of Paro Taktsang (Tiger's Nest), a revered Buddhist site perched 900 meters above the Paro Valley in Bhutan. Hike through scenic trails adorned with prayer flags to reach this sacred 8th-century architectural marvel where Guru Rinpoche meditated.",
+      price: 1199,
       rating: 4.9,
-      duration: "7 days",
-      activities: ["Island Tours", "Wine Tasting", "Sunset Cruise", "Beach Hopping"],
-      highlights: ["Oia Village", "Red Beach", "Ancient Thera", "Fira"],
+      duration: "5 days",
+      activities: ["Monastery Hike", "Cultural Tours", "Meditation", "Photography"],
+      highlights: ["Tiger's Nest", "Paro Valley Views", "Guru Rinpoche's Cave", "Cafeteria Viewpoint"],
       included: [
         "Luxury accommodation",
         "Daily breakfast",
         "Guided tours",
         "Airport transfers",
         "Welcome drink",
-        "24/7 support"
+        "Trekking sticks"
       ],
       gallery: [
-        "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e",
+        "/paro-taktsang.png",
         "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff",
         "https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a",
         "https://images.unsplash.com/photo-1602088113235-229c19758e9f"
@@ -47,38 +47,38 @@ const destinations = [
         {
           name: "Sarah Johnson",
           rating: 5,
-          comment: "Absolutely breathtaking! The tour was perfectly organized.",
+          comment: "Absolutely breathtaking! The hike was totally worth the view.",
           image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330"
         },
         {
           name: "Michael Chen",
           rating: 4.8,
-          comment: "Great experience, professional guides, amazing views!",
+          comment: "A deeply spiritual and incredible experience.",
           image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
         }
       ]
     },
     {
       id: 2,
-      name: "Bali, Indonesia",
-      image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
-      description: "Discover tropical paradise with pristine beaches and lush landscapes.",
-      longDescription: "Experience the magic of Bali, an Indonesian paradise that offers a perfect blend of natural beauty, rich culture, and modern luxury. From pristine beaches and terraced rice fields to ancient temples and vibrant markets, Bali provides an unforgettable escape.",
-      price: 999,
+      name: "Punakha, Bhutan",
+      image: "/punakha.jpg",
+      description: "Explore the ancient capital of Bhutan, featuring the majestic Punakha Dzong and lush valleys.",
+      longDescription: "Discover Punakha, the ancient capital of Bhutan, nestled amidst lush valleys and stunning landscapes. Visit the majestic Punakha Dzong, hike to the beautiful Khamsum Yulley Namgyal Chorten, and experience the thrill of walking across one of the longest suspension bridges over the Mo Chhu river.",
+      price: 1099,
       rating: 4.8,
       duration: "5 days",
-      activities: ["Temple Visits", "Surfing", "Rice Terrace Tours", "Spa Treatments"],
-      highlights: ["Ubud", "Uluwatu Temple", "Tegalalang", "Nusa Dua"],
+      activities: ["Dzong Tour", "River Rafting", "Hiking", "Cultural Experiences"],
+      highlights: ["Punakha Dzong", "Suspension Bridge", "Khamsum Yulley Chorten", "Mo Chhu River"],
       included: [
-        "Beachfront accommodation",
+        "Luxury accommodation",
         "Daily breakfast",
         "Airport transfers",
         "Cultural tours",
-        "Spa session",
+        "River rafting session",
         "Local guide"
       ],
       gallery: [
-        "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
+        "/punakha.jpg",
         "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b",
         "https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8",
         "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1"
@@ -87,38 +87,38 @@ const destinations = [
         {
           name: "Emma Wilson",
           rating: 4.9,
-          comment: "Paradise found! The perfect mix of relaxation and adventure.",
+          comment: "A serene and incredibly beautiful place. The Dzong is magnificent!",
           image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
         },
         {
           name: "David Thompson",
           rating: 4.7,
-          comment: "Incredible cultural experience and beautiful landscapes.",
+          comment: "Incredible cultural experience and beautiful river views.",
           image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
         }
       ]
     },
     {
       id: 3,
-      name: "Machu Picchu, Peru",
-      image: "https://images.unsplash.com/photo-1587595431973-160d0d94add1",
-      description: "Explore the ancient Incan citadel set high in the Andes Mountains.",
-      longDescription: "Journey to the heart of the ancient Inca Empire at Machu Picchu, one of the world's most spectacular archaeological sites. This UNESCO World Heritage site offers breathtaking mountain vistas, fascinating history, and an unforgettable hiking experience.",
-      price: 1499,
+      name: "Bumthang, Bhutan",
+      image: "/bumthang.png",
+      description: "Discover the spiritual heartland of Bhutan, featuring ancient temples and picturesque valleys.",
+      longDescription: "Explore Bumthang, known as the spiritual heartland of Bhutan. Discover ancient Buddhist temples like Jambay Lhakhang, visit the sacred Burning Lake (Mebar Tsho), and experience the serene and culturally rich landscapes of the Choekhor, Chumey, Tang, and Ura valleys.",
+      price: 1399,
       rating: 4.9,
-      duration: "8 days",
-      activities: ["Hiking", "Archaeological Tours", "Cultural Experiences", "Mountain Biking"],
-      highlights: ["Inca Trail", "Sacred Valley", "Cusco", "Rainbow Mountain"],
+      duration: "6 days",
+      activities: ["Temple Visits", "Cultural Tours", "Trekking", "Local Cheese Tasting"],
+      highlights: ["Jambay Lhakhang", "Mebar Tsho", "Jakar Dzong", "Ura Valley"],
       included: [
-        "Mountain lodge accommodation",
+        "Lodge accommodation",
         "All meals",
         "Expert guides",
-        "Train tickets",
+        "Transport",
         "Entrance fees",
-        "Equipment rental"
+        "Cultural experiences"
       ],
       gallery: [
-        "https://images.unsplash.com/photo-1587595431973-160d0d94add1",
+        "/bumthang.png",
         "https://images.unsplash.com/photo-1526392060635-9d6019884377",
         "https://images.unsplash.com/photo-1580619305218-8423a7ef79b4",
         "https://images.unsplash.com/photo-1620768237794-f3bfe964f9f6"
@@ -127,13 +127,13 @@ const destinations = [
         {
           name: "John Martinez",
           rating: 5.0,
-          comment: "Life-changing experience! The guides were exceptional.",
+          comment: "A deeply spiritual journey! The temples were exceptional.",
           image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
         },
         {
           name: "Lisa Chen",
           rating: 4.8,
-          comment: "Perfectly organized trek with stunning views throughout.",
+          comment: "Perfectly organized tour with stunning valleys throughout.",
           image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330"
         }
       ]

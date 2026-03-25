@@ -53,7 +53,7 @@ export default function Home() {
         variants={fadeIn}
         className="relative h-screen flex items-center justify-center"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1508739773434-c26b3d09e071')",
+          backgroundImage: "url('/home-banner.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -71,7 +71,7 @@ export default function Home() {
             className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto"
           >
             Explore breathtaking destinations and create unforgettable memories with
-            TravelNestle.
+            Drukjourney.
           </motion.p>
           <motion.div variants={fadeIn}>
             <Button size="lg" asChild>
@@ -154,28 +154,28 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
-              title: "Santorini, Greece",
-              image: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e",
-              description: "Experience the stunning sunsets and white-washed architecture of Santorini.",
-              price: "$1,299",
+              title: "Paro Taktsang, Bhutan",
+              image: "/paro-taktsang.png",
+              description: "Experience the breathtaking Tiger's Nest Monastery, perched dramatically on a cliffside.",
+              price: "$1,199",
               rating: 4.9,
-              duration: "7 days"
+              duration: "5 days"
             },
             {
-              title: "Bali, Indonesia",
-              image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
-              description: "Discover tropical paradise with pristine beaches and lush landscapes.",
-              price: "$999",
+              title: "Punakha, Bhutan",
+              image: "/punakha.jpg",
+              description: "Explore the ancient capital of Bhutan, featuring the majestic Punakha Dzong and lush valleys.",
+              price: "$1,099",
               rating: 4.8,
               duration: "5 days"
             },
             {
-              title: "Machu Picchu, Peru",
-              image: "https://images.unsplash.com/photo-1587595431973-160d0d94add1",
-              description: "Explore the ancient Incan citadel set high in the Andes Mountains.",
-              price: "$1,499",
+              title: "Bumthang, Bhutan",
+              image: "/bumthang.png",
+              description: "Discover the spiritual heartland of Bhutan, featuring ancient temples and picturesque valleys.",
+              price: "$1,399",
               rating: 4.9,
-              duration: "8 days"
+              duration: "6 days"
             },
           ].map((destination, index) => (
             <motion.div
@@ -272,7 +272,7 @@ export default function Home() {
             {[
               {
                 title: "Cultural Tours",
-                image: "https://images.unsplash.com/photo-1533669955142-6a73332af4db",
+                image: "/cultural-tours.jpg",
                 description: "Immerse yourself in local traditions and customs."
               },
               {
@@ -281,8 +281,8 @@ export default function Home() {
                 description: "Get your adrenaline pumping with exciting activities."
               },
               {
-                title: "Food & Wine",
-                image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
+                title: "Bhutanese Dish",
+                image: "/bhutanese-dish.png",
                 description: "Savor local cuisines and fine wines."
               },
               {
@@ -364,7 +364,7 @@ export default function Home() {
                 name: "Hmd Kamrul",
                 location: "Dhaka, BD",
                 image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EvsAlFJXNQLG4HwCEeDglyEJJsB5DOHLCQ&s",
-                text: "An incredible experience! The team at TravelNestle made our dream vacation a reality. Every detail was perfectly planned."
+                text: "An incredible experience! The team at Drukjourney made our dream vacation a reality. Every detail was perfectly planned."
               },
               {
                 name: "Michael Chen",
@@ -376,7 +376,7 @@ export default function Home() {
                 name: "Emma Wilson",
                 location: "London, UK",
                 image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
-                text: "Outstanding customer service and attention to detail. Our trip to Bali was absolutely perfect thanks to TravelNestle."
+                text: "Outstanding customer service and attention to detail. Our trip to Bali was absolutely perfect thanks to Drukjourney."
               }
             ].map((testimonial, index) => (
               <motion.div
@@ -437,7 +437,7 @@ export default function Home() {
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Join thousands of satisfied travelers who have discovered their dream
-            destinations with TravelNestle.
+            destinations with Drukjourney.
           </p>
           <Button size="lg" variant="secondary" asChild>
             <Link href="/booking">Book Your Trip Now</Link>

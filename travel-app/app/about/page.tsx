@@ -56,7 +56,7 @@ export default function AboutPage() {
             variants={fadeIn}
             className="text-4xl md:text-6xl font-bold mb-6"
           >
-            About TravelNestle
+            About Drukjourney
           </motion.h1>
           <motion.p 
             variants={fadeIn}
@@ -80,7 +80,7 @@ export default function AboutPage() {
             <motion.div variants={fadeIn}>
               <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
               <p className="text-gray-600 mb-6">
-                At TravelNestle, we believe that travel has the power to transform lives. 
+                At Drukjourney, we believe that travel has the power to transform lives. 
                 Our mission is to create authentic, meaningful travel experiences that 
                 connect people with diverse cultures, breathtaking landscapes, and 
                 unforgettable moments.

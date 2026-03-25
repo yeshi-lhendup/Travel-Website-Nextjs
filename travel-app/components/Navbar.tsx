@@ -34,7 +34,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Plane className={`h-8 w-8 text-primary ${ isScrolled ? "" : pathname === "/" ? "text-white" : "text-black"}`} />
-              <span className="font-bold text-xl">TravelNestle</span>
+              <span className="font-bold text-xl">Drukjourney</span>
             </Link>
           </div>
 

@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'TravelNestle - Travel Companion',
+  title: 'Drukjourney - Travel Companion',
   description: 'Discover amazing destinations and plan your next adventure',
 };
 

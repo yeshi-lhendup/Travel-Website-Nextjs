@@ -49,7 +49,7 @@ export default function LoginPage() {
       
       toast({
         title: "Login successful!",
-        description: "Welcome back to TravelNestle.",
+        description: "Welcome back to Drukjourney.",
       });
       
       // Here you would typically handle the authentication
