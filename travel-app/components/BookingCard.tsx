@@ -39,9 +39,9 @@ const destinations = [
       ],
       gallery: [
         "/paro-taktsang.png",
-        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff",
-        "https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a",
-        "https://images.unsplash.com/photo-1602088113235-229c19758e9f"
+        "/taktsang-gallery-1.jpg",
+        "/taktsang-gallery-2.jpg",
+        "/taktsang-gallery-3.jpg"
       ],
       reviews: [
         {

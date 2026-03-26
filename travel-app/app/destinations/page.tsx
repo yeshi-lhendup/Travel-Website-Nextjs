@@ -10,36 +10,36 @@ import Link from "next/link";
 const destinations = [
   {
     id: 1,
-    name: "Santorini, Greece",
-    image: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e",
-    description: "Experience the stunning sunsets and white-washed architecture of Santorini.",
-    price: "$1,299",
+    name: "Paro Taktsang, Bhutan",
+    image: "/paro-taktsang.png",
+    description: "Experience the breathtaking Tiger's Nest Monastery, perched dramatically on a cliffside.",
+    price: "$1,199",
     rating: 4.9,
-    duration: "7 days",
-    activities: ["Island Tours", "Wine Tasting", "Sunset Cruise", "Beach Hopping"],
-    highlights: ["Oia Village", "Red Beach", "Ancient Thera", "Fira"],
+    duration: "5 days",
+    activities: ["Monastery Hike", "Cultural Tours", "Meditation", "Photography"],
+    highlights: ["Tiger's Nest", "Paro Valley Views", "Guru Rinpoche's Cave", "Cafeteria Viewpoint"],
   },
   {
     id: 2,
-    name: "Bali, Indonesia",
-    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
-    description: "Discover tropical paradise with pristine beaches and lush landscapes.",
-    price: "$999",
+    name: "Punakha, Bhutan",
+    image: "/punakha.jpg",
+    description: "Explore the ancient capital of Bhutan, featuring the majestic Punakha Dzong and lush valleys.",
+    price: "$1,099",
     rating: 4.8,
     duration: "5 days",
-    activities: ["Temple Visits", "Surfing", "Rice Terrace Tours", "Spa Treatments"],
-    highlights: ["Ubud", "Uluwatu Temple", "Tegalalang", "Nusa Dua"],
+    activities: ["Dzong Tour", "River Rafting", "Hiking", "Cultural Experiences"],
+    highlights: ["Punakha Dzong", "Suspension Bridge", "Khamsum Yulley Chorten", "Mo Chhu River"],
   },
   {
     id: 3,
-    name: "Machu Picchu, Peru",
-    image: "https://images.unsplash.com/photo-1587595431973-160d0d94add1",
-    description: "Explore the ancient Incan citadel set high in the Andes Mountains.",
-    price: "$1,499",
+    name: "Bumthang, Bhutan",
+    image: "/bumthang.png",
+    description: "Discover the spiritual heartland of Bhutan, featuring ancient temples and picturesque valleys.",
+    price: "$1,399",
     rating: 4.9,
-    duration: "8 days",
-    activities: ["Hiking", "Archaeological Tours", "Cultural Experiences", "Mountain Biking"],
-    highlights: ["Inca Trail", "Sacred Valley", "Cusco", "Rainbow Mountain"],
+    duration: "6 days",
+    activities: ["Temple Visits", "Cultural Tours", "Trekking", "Local Cheese Tasting"],
+    highlights: ["Jambay Lhakhang", "Mebar Tsho", "Jakar Dzong", "Ura Valley"],
   },
   {
     id: 4,
@@ -95,7 +95,28 @@ export default function DestinationsPage() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <div className="min-h-screen bg-gray-50 pt-16">
+      {/* Hero Section */}
+      <motion.section
+        initial="hidden"
+        animate="visible"
+        variants={fadeIn}
+        className="relative h-[40vh] flex items-center justify-center"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1488085061387-422e29b40080')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Destinations</h1>
+          <p className="text-xl md:text-2xl max-w-2xl mx-auto">
+            Discover your next great adventure
+          </p>
+        </div>
+      </motion.section>
+
       {/* Search and Filter Section */}
       <div className="bg-white shadow-md py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
