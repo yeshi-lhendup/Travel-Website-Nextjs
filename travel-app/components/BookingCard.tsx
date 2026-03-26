@@ -415,12 +415,13 @@ const BookingCard: React.FC = () => {
               <h3 className="text-xl font-semibold mb-4">Gallery</h3>
               <div className="grid grid-cols-2 gap-4">
                 {destination.gallery.map((image, index) => (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`${destination.name} gallery ${index + 1}`}
-                    className="rounded-lg h-48 w-full object-cover"
-                  />
+                  <div key={index} className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-gray-100">
+                    <img
+                      src={image}
+                      alt={`${destination.name} gallery ${index + 1}`}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
                 ))}
               </div>
             </motion.section>
